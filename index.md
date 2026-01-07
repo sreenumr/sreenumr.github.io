@@ -14,6 +14,5 @@ Designing and operating scalable cloud platforms with a focus on reliability and
 
 [Projects](/projects)  
 [Blog](/blog)  
-[LinkedIn](https://linkedin.com/in/sreenumraj)
+[LinkedIn](https://linkedin.com/in/sreenumraj)  
 [Download CV](/assets/Sreenu_M_Raj_CV.pdf)
-
