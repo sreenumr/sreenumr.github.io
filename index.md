@@ -12,6 +12,8 @@ Designing and operating scalable cloud platforms with a focus on reliability and
 - Docker & Kubernetes
 - Observability (Prometheus, Grafana, Splunk, Kafka)
 
-👉 [Projects](/projects)  
-👉 [Blog](/blog)  
-👉 [LinkedIn](https://linkedin.com/in/sreenumraj)
+[Projects](/projects)  
+[Blog](/blog)  
+[LinkedIn](https://linkedin.com/in/sreenumraj)
+[Download CV](/assets/Sreenu_M_Raj_CV.pdf)
+
