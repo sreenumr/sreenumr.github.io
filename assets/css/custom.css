@@ -1,5 +1,45 @@
+/* Layout */
 .page-content {
   max-width: 900px;
   margin: auto;
   padding: 2rem 1.5rem;
+}
+
+/* Typography */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin-top: 2.5rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Code blocks */
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem 0;
 }
