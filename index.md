@@ -2,17 +2,16 @@
 layout: home
 ---
 
-## Software Engineer
+<section class="hero">
+  <h1>Software Engineer</h1>
+  <p class="hero-subtitle">
+    Designing and operating scalable cloud platforms with a focus on reliability and automation.
+  </p>
 
-Designing and operating scalable cloud platforms with a focus on reliability and automation.
-
-**Core focus:**
-- CI/CD pipelines (GitLab, Jenkins)
-- AWS infrastructure (EC2, EKS, RDS, S3)
-- Docker & Kubernetes
-- Observability (Prometheus, Grafana, Splunk, Kafka)
-
-[Projects](/projects)  
-[Blog](/blog)  
-[LinkedIn](https://linkedin.com/in/sreenumraj)  
-[Download CV](/assets/Sreenu_M_Raj_CV.pdf)
+  <ul class="hero-focus">
+    <li>CI/CD pipelines (GitLab, Jenkins)</li>
+    <li>AWS infrastructure (EC2, EKS, RDS, S3)</li>
+    <li>Docker & Kubernetes</li>
+    <li>Observability (Prometheus, Grafana, Splunk, Kafka)</li>
+  </ul>
+</section>
