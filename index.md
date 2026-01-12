@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-
+<!--Dummy commit to trigger workflow-->
 <section class="hero">
   <h1>Software Engineer</h1>
   <p class="hero-subtitle">
