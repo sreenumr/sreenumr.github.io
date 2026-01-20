@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Sreenu Mappompilly Raj</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-brand">Sreenu</a>
+      <div class="nav-links">
+        <a href="/projects">Projects</a>
+        <a href="/blog">Blog</a>
+        <a href="/assets/Sreenu_M_Raj_CV.pdf">CV</a>
+        <a href="https://linkedin.com/in/sreenumraj" target="_blank">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <article class="page">
+    <h1>TaskTrackerAPI</h1>
+    <h2 id="what-this-is">What this is</h2>
+<p>A production-style FastAPI service deployed via CI/CD to AWS EC2.</p>
+
+<h2 id="why-i-built-it">Why I built it</h2>
+<p>To practice end-to-end DevOps ownership:
+build → test → scan → deploy → observe.</p>
+
+<h2 id="architecture">Architecture</h2>
+<ul>
+  <li>FastAPI</li>
+  <li>Docker</li>
+  <li>GitLab CI/CD</li>
+  <li>Terraform</li>
+  <li>AWS EC2, RDS, S3</li>
+</ul>
+
+<h2 id="what-works">What works</h2>
+<ul>
+  <li>Idempotent deployments</li>
+  <li>Security scans in pipeline</li>
+  <li>Healthcheck-based validation</li>
+</ul>
+
+<h2 id="what-broke-and-how-i-fixed-it">What broke (and how I fixed it)</h2>
+<ul>
+  <li>Container name conflicts</li>
+  <li>Incorrect binding (<code class="language-plaintext highlighter-rouge">127.0.0.1</code>)</li>
+  <li>Masked CI variables</li>
+</ul>
+
+<h2 id="links">Links</h2>
+<ul>
+  <li>GitHub repo</li>
+  <li>Blog posts related to this project</li>
+</ul>
+
+</article>
+  </main>
+</body>
+
+</html>

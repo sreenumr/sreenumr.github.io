@@ -3,21 +3,11 @@ layout: page
 title: Projects
 ---
 
-## TaskTrackerAPI – Cloud-Native DevOps Project
+## Production-Style Projects
 
-**Stack:** FastAPI, Docker, GitLab CI/CD, Terraform, AWS
+These are not tutorials.  
+Each project includes failures, fixes, and evidence.
 
-- Dockerized FastAPI app
-- Full CI/CD with security scans
-- Terraform-managed AWS infra
-- Automated EC2 deployment
-
-<!--🔗 GitHub: https://github.com/<you>/tasktracker -->
-
----
-
-## Kafka Log Streamer
-
-- FastAPI → Kafka → Splunk/Grafana
-- DuckDB for offline analytics
-- Production-grade observability
+- [TaskTrackerAPI](/projects/tasktracker)
+- [Kafka Log Streamer](/projects/kafka-log-streamer)
+- [Monitoring Dashboard](/projects/monitoring-dashboard)
