@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Sreenu Mappompilly Raj</title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="/" class="nav-brand">Sreenu</a>
+      <div class="nav-links">
+        <a href="/projects">Projects</a>
+        <a href="/blog">Blog</a>
+        <a href="/assets/Sreenu_M_Raj_CV.pdf">CV</a>
+        <a href="https://linkedin.com/in/sreenumraj" target="_blank">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <article class="post">
+    <h1>The Docker Container Name Conflict That Broke Redeployments</h1>
+    <p class="post-meta">Jan 19, 2026</p>
+    <h2 id="problem">Problem</h2>
+<p>Redeployments failed with:
+<code class="language-plaintext highlighter-rouge">container name already in use</code>.</p>
+
+<h2 id="why-this-happened">Why This Happened</h2>
+<p>The deploy script assumed a clean host.
+Production never is.</p>
+
+<h2 id="fix">Fix</h2>
+<p>Make cleanup explicit and safe:</p>
+<ul>
+  <li>Stop container if exists</li>
+  <li>Remove container if exists</li>
+  <li>Then deploy</li>
+</ul>
+
+<h2 id="takeaway">Takeaway</h2>
+<p>If your deployment isn’t idempotent, it’s fragile.</p>
+
+</article>
+  </main>
+</body>
+
+</html>
