@@ -1,13 +1,23 @@
 ---
-layout: page
+layout: default
 title: Projects
 ---
 
-## Production-Style Projects
+<div class="grid gap-6">
+  <div class="border border-gray-800 rounded-lg p-6">
+    <h2 class="text-xl font-semibold">TaskTrackerAPI</h2>
+    <p class="text-gray-400 mt-2">
+      FastAPI + Docker + GitLab CI/CD + AWS deployment with Terraform.
+    </p>
 
-These are not tutorials.  
-Each project includes failures, fixes, and evidence.
+    <div class="mt-4 text-sm text-gray-300">
+      <a href="/projects/tasktrackerapi" class="hover:text-white">
+        View details →
+      </a>
+    </div>
+  </div>
+</div>
 
-- [TaskTrackerAPI](/projects/tasktracker)
+<!-- - [TaskTrackerAPI](/projects/tasktracker)
 - [Kafka Log Streamer](/projects/kafka-log-streamer)
-- [Monitoring Dashboard](/projects/monitoring-dashboard)
+- [Monitoring Dashboard](/projects/monitoring-dashboard) -->

@@ -2,44 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-
-  <title>Sreenu Mappompilly Raj</title>
-
-  <link rel="stylesheet" href="/assets/css/style.css">
-
-  <link rel="stylesheet" href="/assets/css/custom.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="/" class="nav-brand">Sreenu</a>
-      <div class="nav-links">
-        <a href="/projects">Projects</a>
-        <a href="/blog">Blog</a>
-        <a href="/assets/Sreenu_M_Raj_CV.pdf">CV</a>
-        <a href="https://linkedin.com/in/sreenumraj" target="_blank">LinkedIn</a>
-      </div>
-    </nav>
-  </header>
+<body class="bg-white text-blue-600">
+  <nav class="border-b border-gray-800">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-lg font-semibold">
+            Sreenu M Raj
+        </a>
 
-  <main class="page-content">
-    <article class="page">
-    <h1>Projects</h1>
-    <h2 id="production-style-projects">Production-Style Projects</h2>
+        <div class="space-x-6 text-sm text-gray-300">
+            <a href="/projects" class="hover:text-white">Projects</a>
+            <a href="/blog" class="hover:text-white">Blog</a>
+            <a href="/about" class="hover:text-white">About</a>
+        </div>
+    </div>
+</nav>
 
-<p>These are not tutorials.<br />
-Each project includes failures, fixes, and evidence.</p>
+  <main class="max-w-5xl mx-auto px-6 py-10">
+    <div class="grid gap-6">
+  <div class="border border-gray-800 rounded-lg p-6">
+    <h2 class="text-xl font-semibold">TaskTrackerAPI</h2>
+    <p class="text-gray-400 mt-2">
+      FastAPI + Docker + GitLab CI/CD + AWS deployment with Terraform.
+    </p>
 
-<ul>
-  <li><a href="/projects/tasktracker">TaskTrackerAPI</a></li>
-  <li><a href="/projects/kafka-log-streamer">Kafka Log Streamer</a></li>
-  <li><a href="/projects/monitoring-dashboard">Monitoring Dashboard</a></li>
-</ul>
+    <div class="mt-4 text-sm text-gray-300">
+      <a href="/projects/tasktrackerapi" class="hover:text-white">
+        View details →
+      </a>
+    </div>
+  </div>
+</div>
 
-</article>
+<!-- - [TaskTrackerAPI](/projects/tasktracker)
+- [Kafka Log Streamer](/projects/kafka-log-streamer)
+- [Monitoring Dashboard](/projects/monitoring-dashboard) -->
+
   </main>
+
+  <footer class="border-t border-gray-800 mt-16">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-sm text-gray-500">
+        © 2026 Sreenu M Raj.
+    </div>
+</footer>
 </body>
 
 </html>
