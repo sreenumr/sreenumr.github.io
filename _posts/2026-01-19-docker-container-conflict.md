@@ -6,19 +6,29 @@ tags: [docker, automation]
 excerpt: "Why idempotency matters more than your first deploy."
 ---
 
-## Problem
-Redeployments failed with:
-`container name already in use`.
+## Context
 
-## Why This Happened
-The deploy script assumed a clean host.
-Production never is.
+While building a FastAPI service with GitLab CI/CD, I ran into several issues
+that weren’t obvious from documentation.
+
+This post captures the key failures and fixes.
+
+---
+
+## Issue 1: App not reachable after deployment
+
+
+
+**Symptom**
+- Container started successfully
+- `curl` returned empty response
+
+
+**Cause**
+- App was bound to `127.0.0.1` inside the container
 
 ## Fix
-Make cleanup explicit and safe:
-- Stop container if exists
-- Remove container if exists
-- Then deploy
 
-## Takeaway
-If your deployment isn’t idempotent, it’s fragile.
+```bash
+gunicorn main:app -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
+

@@ -2,8 +2,69 @@
 layout: default
 ---
 
-<article class="post">
-    <h1>{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %d, %Y" }}</p>
-    {{ content }}
+<article class="max-w-3xl bg-white p-10 rounded-xl">
+
+    <!-- Header -->
+    <header class="mb-12">
+        <h1 class="text-3xl font-semibold leading-tight">
+            {{ page.title }}
+        </h1>
+
+        <p class="mt-3 text-sm text-gray-500">
+            {{ page.date | date: "%d %b %Y" }}
+        </p>
+    </header>
+
+    <!-- Content -->
+    <section class="space-y-8 text-gray-800 leading-relaxed">
+
+        <!-- Headings -->
+        <style>
+            section h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-top: 3rem;
+            }
+
+            section h3 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-top: 2rem;
+            }
+
+            section p {
+                margin-top: 0.75rem;
+            }
+
+            section ul {
+                margin-top: 0.75rem;
+                padding-left: 1.25rem;
+                list-style-type: disc;
+            }
+
+            section li {
+                margin-top: 0.25rem;
+            }
+
+            section pre {
+                background: #f5f5f5;
+                padding: 1rem;
+                border-radius: 6px;
+                overflow-x: auto;
+                font-size: 0.875rem;
+                margin-top: 0.75rem;
+            }
+
+            section code {
+                background: #f0f0f0;
+                padding: 0.15rem 0.3rem;
+                border-radius: 4px;
+                font-size: 0.875rem;
+            }
+        </style>
+
+        {{ content }}
+
+    </section>
+
 </article>

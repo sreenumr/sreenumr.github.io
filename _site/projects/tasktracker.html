@@ -8,93 +8,115 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-gray-900">
+<body class="bg-gray-50 text-gray-900">
   <div class="flex min-h-screen">
 
-    <aside class="w-64 border-r border-gray-100 px-6 py-10">
+    <aside class="w-64 bg-white border-r border-gray-200 px-4 py-6">
     <div class="flex flex-col h-full">
 
-        <!-- Name / Brand -->
-        <a href="/" class="text-2xl font-semibold text-blue-600">
-            Sreenu M Raj
-        </a>
+        <!-- Brand -->
+        <div class="px-3 mb-8">
+            <h1 class="text-lg font-semibold">Sreenu M Raj</h1>
+            <p class="text-sm text-gray-500">DevOps Engineer</p>
+        </div>
 
-        <!-- Role -->
-        <p class="mt-1 text-sm text-gray-500">
-            DevOps Engineer
-        </p>
-
-        <!-- Navigation -->
-        <nav class="mt-10 flex flex-col space-y-3 text-sm">
-            <a href="/projects"
-                class="text-blue-600 font-medium">
+        <!-- Nav -->
+        <nav class="space-y-1 text-sm">
+            <a href="/projects" class="flex items-center px-3 py-2 rounded-lg
+        
+          bg-blue-100 text-blue-700 font-medium
+        ">
                 Projects
             </a>
 
-            <a href="/blog"
-                class="text-gray-600 hover:text-gray-900">
+            <a href="/blog" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
                 Blog
             </a>
 
-            <a href="/about"
-                class="text-gray-600 hover:text-gray-900">
+            <a href="/about" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
                 About
             </a>
         </nav>
 
-
-        <!-- Footer push -->
-        <div class="mt-auto pt-10 text-xs text-gray-400">
+        <!-- Footer -->
+        <div class="mt-auto px-3 text-xs text-gray-400">
             © 2026
         </div>
 
     </div>
 </aside>
 
-    <main class="flex-1 px-10 py-12">
-      <article class="page">
-    <h1>TaskTrackerAPI</h1>
-    <h2 id="what-this-is">What this is</h2>
-<p>A production-style FastAPI service deployed via CI/CD to AWS EC2.</p>
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-10 py-10">
+        <div class="max-w-3xl space-y-10">
 
-<h2 id="why-i-built-it">Why I built it</h2>
-<p>To practice end-to-end DevOps ownership:
-build → test → scan → deploy → observe.</p>
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Problem</h2>
 
-<h2 id="architecture">Architecture</h2>
-<ul>
-  <li>FastAPI</li>
-  <li>Docker</li>
-  <li>GitLab CI/CD</li>
-  <li>Terraform</li>
-  <li>AWS EC2, RDS, S3</li>
-</ul>
+  <p class="text-gray-700">
+    Manual task tracking and deployment workflows were inconsistent, error-prone,
+    and difficult to reproduce across environments.
+  </p>
 
-<h2 id="what-works">What works</h2>
-<ul>
-  <li>Idempotent deployments</li>
-  <li>Security scans in pipeline</li>
-  <li>Healthcheck-based validation</li>
-</ul>
+  <ul class="list-disc pl-6 mt-4 text-gray-700">
+    <li>No standard deployment pipeline</li>
+    <li>Manual EC2 setup</li>
+    <li>No automated testing or security checks</li>
+  </ul>
+</section>
 
-<h2 id="what-broke-and-how-i-fixed-it">What broke (and how I fixed it)</h2>
-<ul>
-  <li>Container name conflicts</li>
-  <li>Incorrect binding (<code class="language-plaintext highlighter-rouge">127.0.0.1</code>)</li>
-  <li>Masked CI variables</li>
-</ul>
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Architecture</h2>
 
-<h2 id="links">Links</h2>
-<ul>
-  <li>GitHub repo</li>
-  <li>Blog posts related to this project</li>
-</ul>
+  <h3 class="text-lg font-medium mt-6">Backend</h3>
+  <ul class="list-disc pl-6 mt-2 text-gray-700">
+    <li>FastAPI service</li>
+    <li>RESTful API design</li>
+    <li>Pydantic-based request validation</li>
+  </ul>
 
-</article>
+  <h3 class="text-lg font-medium mt-6">Infrastructure</h3>
+  <ul class="list-disc pl-6 mt-2 text-gray-700">
+    <li>AWS EC2, S3, RDS</li>
+    <li>Terraform for Infrastructure as Code</li>
+    <li>Docker for containerisation</li>
+  </ul>
+
+  <h3 class="text-lg font-medium mt-6">CI/CD</h3>
+  <ul class="list-disc pl-6 mt-2 text-gray-700">
+    <li>GitLab CI/CD pipelines</li>
+    <li>Automated test execution</li>
+    <li>Image scanning and controlled deployment</li>
+  </ul>
+
+  <div class="mt-6 bg-gray-100 rounded-md p-4 font-mono text-sm">
+    Code → CI → Docker → AWS EC2
+  </div>
+</section>
+
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Outcome</h2>
+
+  <ul class="list-disc pl-6 text-gray-700">
+    <li>Standardised CI/CD workflow from commit to deployment</li>
+    <li>Repeatable, idempotent infrastructure provisioning</li>
+    <li>Reduced deployment friction and runtime failures</li>
+    <li>Production-ready service exposed via public endpoint</li>
+  </ul>
+</section>
+
+</div>
+
+      </div>
     </main>
 
   </div>
 </body>
-
 
 </html>

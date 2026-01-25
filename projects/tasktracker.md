@@ -1,32 +1,63 @@
 ---
-layout: page
+layout: default
 title: TaskTrackerAPI
 ---
 
-## What this is
-A production-style FastAPI service deployed via CI/CD to AWS EC2.
+<div class="max-w-3xl space-y-10">
 
-## Why I built it
-To practice end-to-end DevOps ownership:
-build → test → scan → deploy → observe.
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Problem</h2>
 
-## Architecture
-- FastAPI
-- Docker
-- GitLab CI/CD
-- Terraform
-- AWS EC2, RDS, S3
+  <p class="text-gray-700">
+    Manual task tracking and deployment workflows were inconsistent, error-prone,
+    and difficult to reproduce across environments.
+  </p>
 
-## What works
-- Idempotent deployments
-- Security scans in pipeline
-- Healthcheck-based validation
+  <ul class="list-disc pl-6 mt-4 text-gray-700">
+    <li>No standard deployment pipeline</li>
+    <li>Manual EC2 setup</li>
+    <li>No automated testing or security checks</li>
+  </ul>
+</section>
 
-## What broke (and how I fixed it)
-- Container name conflicts
-- Incorrect binding (`127.0.0.1`)
-- Masked CI variables
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Architecture</h2>
 
-## Links
-- GitHub repo
-- Blog posts related to this project
+  <h3 class="text-lg font-medium mt-6">Backend</h3>
+  <ul class="list-disc pl-6 mt-2 text-gray-700">
+    <li>FastAPI service</li>
+    <li>RESTful API design</li>
+    <li>Pydantic-based request validation</li>
+  </ul>
+
+  <h3 class="text-lg font-medium mt-6">Infrastructure</h3>
+  <ul class="list-disc pl-6 mt-2 text-gray-700">
+    <li>AWS EC2, S3, RDS</li>
+    <li>Terraform for Infrastructure as Code</li>
+    <li>Docker for containerisation</li>
+  </ul>
+
+  <h3 class="text-lg font-medium mt-6">CI/CD</h3>
+  <ul class="list-disc pl-6 mt-2 text-gray-700">
+    <li>GitLab CI/CD pipelines</li>
+    <li>Automated test execution</li>
+    <li>Image scanning and controlled deployment</li>
+  </ul>
+
+  <div class="mt-6 bg-gray-100 rounded-md p-4 font-mono text-sm">
+    Code → CI → Docker → AWS EC2
+  </div>
+</section>
+
+<section>
+  <h2 class="text-2xl font-semibold mb-4">Outcome</h2>
+
+  <ul class="list-disc pl-6 text-gray-700">
+    <li>Standardised CI/CD workflow from commit to deployment</li>
+    <li>Repeatable, idempotent infrastructure provisioning</li>
+    <li>Reduced deployment friction and runtime failures</li>
+    <li>Production-ready service exposed via public endpoint</li>
+  </ul>
+</section>
+
+</div>

@@ -8,77 +8,149 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-gray-900">
+<body class="bg-gray-50 text-gray-900">
   <div class="flex min-h-screen">
 
-    <aside class="w-64 border-r border-gray-100 px-6 py-10">
+    <aside class="w-64 bg-white border-r border-gray-200 px-4 py-6">
     <div class="flex flex-col h-full">
 
-        <!-- Name / Brand -->
-        <a href="/" class="text-2xl font-semibold text-blue-600">
-            Sreenu M Raj
-        </a>
+        <!-- Brand -->
+        <div class="px-3 mb-8">
+            <h1 class="text-lg font-semibold">Sreenu M Raj</h1>
+            <p class="text-sm text-gray-500">DevOps Engineer</p>
+        </div>
 
-        <!-- Role -->
-        <p class="mt-1 text-sm text-gray-500">
-            DevOps Engineer
-        </p>
-
-        <!-- Navigation -->
-        <nav class="mt-10 flex flex-col space-y-3 text-sm">
-            <a href="/projects"
-                class="text-gray-600 hover:text-gray-900">
+        <!-- Nav -->
+        <nav class="space-y-1 text-sm">
+            <a href="/projects" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
                 Projects
             </a>
 
-            <a href="/blog"
-                class="text-gray-600 hover:text-gray-900">
+            <a href="/blog" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
                 Blog
             </a>
 
-            <a href="/about"
-                class="text-gray-600 hover:text-gray-900">
+            <a href="/about" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
                 About
             </a>
         </nav>
 
-
-        <!-- Footer push -->
-        <div class="mt-auto pt-10 text-xs text-gray-400">
+        <!-- Footer -->
+        <div class="mt-auto px-3 text-xs text-gray-400">
             © 2026
         </div>
 
     </div>
 </aside>
 
-    <main class="flex-1 px-10 py-12">
-      <article class="post">
-    <h1>The Docker Container Name Conflict That Broke Redeployments</h1>
-    <p class="post-meta">Jan 19, 2026</p>
-    <h2 id="problem">Problem</h2>
-<p>Redeployments failed with:
-<code class="language-plaintext highlighter-rouge">container name already in use</code>.</p>
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-10 py-10">
+        <article class="max-w-3xl bg-white p-10 rounded-xl">
 
-<h2 id="why-this-happened">Why This Happened</h2>
-<p>The deploy script assumed a clean host.
-Production never is.</p>
+    <!-- Header -->
+    <header class="mb-12">
+        <h1 class="text-3xl font-semibold leading-tight">
+            The Docker Container Name Conflict That Broke Redeployments
+        </h1>
 
-<h2 id="fix">Fix</h2>
-<p>Make cleanup explicit and safe:</p>
+        <p class="mt-3 text-sm text-gray-500">
+            19 Jan 2026
+        </p>
+    </header>
+
+    <!-- Content -->
+    <section class="space-y-8 text-gray-800 leading-relaxed">
+
+        <!-- Headings -->
+        <style>
+            section h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-top: 3rem;
+            }
+
+            section h3 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-top: 2rem;
+            }
+
+            section p {
+                margin-top: 0.75rem;
+            }
+
+            section ul {
+                margin-top: 0.75rem;
+                padding-left: 1.25rem;
+                list-style-type: disc;
+            }
+
+            section li {
+                margin-top: 0.25rem;
+            }
+
+            section pre {
+                background: #f5f5f5;
+                padding: 1rem;
+                border-radius: 6px;
+                overflow-x: auto;
+                font-size: 0.875rem;
+                margin-top: 0.75rem;
+            }
+
+            section code {
+                background: #f0f0f0;
+                padding: 0.15rem 0.3rem;
+                border-radius: 4px;
+                font-size: 0.875rem;
+            }
+        </style>
+
+        <h2 id="context">Context</h2>
+
+<p>While building a FastAPI service with GitLab CI/CD, I ran into several issues
+that weren’t obvious from documentation.</p>
+
+<p>This post captures the key failures and fixes.</p>
+
+<hr />
+
+<h2 id="issue-1-app-not-reachable-after-deployment">Issue 1: App not reachable after deployment</h2>
+
+<p><strong>Symptom</strong></p>
 <ul>
-  <li>Stop container if exists</li>
-  <li>Remove container if exists</li>
-  <li>Then deploy</li>
+  <li>Container started successfully</li>
+  <li><code class="language-plaintext highlighter-rouge">curl</code> returned empty response</li>
 </ul>
 
-<h2 id="takeaway">Takeaway</h2>
-<p>If your deployment isn’t idempotent, it’s fragile.</p>
+<p><strong>Cause</strong></p>
+<ul>
+  <li>App was bound to <code class="language-plaintext highlighter-rouge">127.0.0.1</code> inside the container</li>
+</ul>
+
+<h2 id="fix">Fix</h2>
+
+<p>```bash
+gunicorn main:app -k uvicorn.workers.UvicornWorker –bind 0.0.0.0:8000</p>
+
+
+
+    </section>
 
 </article>
+      </div>
     </main>
 
   </div>
 </body>
-
 
 </html>
