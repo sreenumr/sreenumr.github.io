@@ -3,25 +3,52 @@ layout: default
 title: Home
 ---
 
-<section class="space-y-6">
-  <h1 class="text-4xl font-bold">
+<section class="max-w-3xl">
+  <h1 class="text-5xl font-bold leading-tight">
     DevOps Engineer
   </h1>
 
-  <p class="text-gray-400 max-w-2xl">
+  <p class="mt-6 text-lg text-gray-600">
     I design, automate, and operate cloud-native systems.
     Focused on CI/CD, AWS, Kubernetes, and production-grade automation.
   </p>
 
-  <div class="flex gap-4 pt-4">
-    <a href="/projects"
-       class="px-4 py-2 bg-white text-black rounded-md text-sm font-medium">
+  <div class="mt-8 flex gap-4">
+    <a
+      href="/projects"
+      class="px-5 py-3 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700"
+    >
       View Projects
     </a>
 
-    <a href="/blog"
-       class="px-4 py-2 border border-gray-700 rounded-md text-sm text-gray-300">
-      Read Blog
+    <a
+      href="/blog"
+      class="px-5 py-3 border border-gray-300 rounded-md text-sm text-gray-700 hover:border-gray-400"
+    >
+       Blog
     </a>
+  </div>
+</section>
+
+<!-- Projects preview -->
+<section class="mt-20 max-w-4xl">
+  <h2 class="text-xl font-semibold mb-6">
+     Projects
+  </h2>
+
+  <div class="space-y-4">
+    <div class="border border-gray-200 rounded-lg p-5">
+      <h3 class="font-medium">TaskTrackerAPI</h3>
+      <p class="text-sm text-gray-600 mt-1">
+        FastAPI service with Docker, GitLab CI/CD, Terraform, and AWS EC2 deployment.
+      </p>
+    </div>
+
+    <div class="border border-gray-200 rounded-lg p-5">
+      <h3 class="font-medium">Kafka Log Streamer</h3>
+      <p class="text-sm text-gray-600 mt-1">
+        Event-driven log streaming with Kafka, Grafana, Splunk, and DuckDB analytics.
+      </p>
+    </div>
   </div>
 </section>

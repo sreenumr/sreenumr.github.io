@@ -8,14 +8,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-blue-600">
-  {% include navbar.html %}
+<body class="bg-white text-gray-900">
+  <div class="flex min-h-screen">
 
-  <main class="max-w-5xl mx-auto px-6 py-10">
-    {{ content }}
-  </main>
+    {% include sidebar.html %}
 
-  {% include footer.html %}
+    <main class="flex-1 px-10 py-12">
+      {{ content }}
+    </main>
+
+  </div>
 </body>
+
 
 </html>
