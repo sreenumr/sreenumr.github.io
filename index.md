@@ -5,7 +5,7 @@ title: Home
 
 <section class="max-w-3xl">
   <h1 class="text-5xl font-bold leading-tight">
-    DevOps Engineer
+    Hello World
   </h1>
 
   <p class="mt-6 text-lg text-gray-600">

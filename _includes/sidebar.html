@@ -6,48 +6,48 @@
     transition-transform duration-200 ease-in-out
   ">
 
-    <div class="flex flex-col h-full">
+  <div class="flex flex-col h-full">
 
-        <!-- Brand -->
-        <div class="px-3 mb-8">
-            <h1 class="text-3xl font-semibold"><a href="/">Sreenu M Raj</a></h1>
-            <p class="text-lg text-gray-500">DevOps Engineer</p>
-        </div>
+    <!-- Brand -->
+    <div class="px-3 mb-8">
+      <h1 class="text-3xl font-semibold"><a href="/">Sreenu M Raj</a></h1>
+      <p class="text-lg text-gray-500">DevOps Engineer</p>
+    </div>
 
-        <!-- Nav -->
-        <nav class="space-y-1 text-lg">
-            <a href="/projects" class="flex items-center px-3 py-2 rounded-lg
+    <!-- Nav -->
+    <nav class="space-y-1 text-lg">
+      <a href="/projects" class="flex items-center px-3 py-2 rounded-lg
         {% if page.url contains '/projects' %}
           bg-blue-100 text-blue-700 font-medium
         {% else %}
           text-gray-700 hover:bg-gray-100
         {% endif %}">
-                Projects
-            </a>
+        Projects
+      </a>
 
-            <a href="/blog" class="flex items-center px-3 py-2 rounded-lg
+      <a href="/blog" class="flex items-center px-3 py-2 rounded-lg
         {% if page.url contains '/blog' %}
           bg-blue-100 text-blue-700 font-medium
         {% else %}
           text-gray-700 hover:bg-gray-100
         {% endif %}">
-                Blog
-            </a>
+        Blog
+      </a>
 
-            <a href="/about" class="flex items-center px-3 py-2 rounded-lg
+      <!-- <a href="/about" class="flex items-center px-3 py-2 rounded-lg
         {% if page.url contains '/about' %}
           bg-blue-100 text-blue-700 font-medium
         {% else %}
           text-gray-700 hover:bg-gray-100
         {% endif %}">
                 About
-            </a>
-        </nav>
+            </a> -->
+    </nav>
 
-        <!-- Footer -->
-        <div class="mt-auto px-3 text-xs text-gray-400">
-            © {{ site.time | date: "%Y" }}
-        </div>
-
+    <!-- Footer -->
+    <div class="mt-auto px-3 text-xs text-gray-400">
+      © {{ site.time | date: "%Y" }}
     </div>
+
+  </div>
 </aside>

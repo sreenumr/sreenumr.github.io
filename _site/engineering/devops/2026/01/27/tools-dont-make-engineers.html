@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Tools Don’t Make You an Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -69,46 +69,102 @@
           ☰
         </button>
         <span class="text-sm font-medium">
-          Home
+          Tools Don’t Make You an Engineer
         </span>
       </header>
 
       <div class="max-w-6xl mx-auto px-6 md:px-10 py-8">
-        <section class="max-w-3xl">
-  <h1 class="text-5xl font-bold leading-tight">
-    Hello World
-  </h1>
+        <article class="max-w-3xl bg-white p-10 rounded-xl">
 
-  <p class="mt-6 text-lg text-gray-600">
-    I design, automate, and operate cloud-native systems.
-    Focused on CI/CD, AWS, Kubernetes, and production-grade automation.
-  </p>
+    <!-- Header -->
+    <header class="mb-12">
+        <h1 class="text-3xl font-semibold leading-tight">
+            Tools Don’t Make You an Engineer
+        </h1>
 
-</section>
+        <p class="mt-3 text-sm text-gray-500">
+            27 Jan 2026
+        </p>
+    </header>
 
-<!-- Projects preview -->
-<section class="mt-20 max-w-4xl">
-  <h2 class="text-xl font-semibold mb-6">
-     Projects
-  </h2>
+    <!-- Content -->
+    <section class="space-y-8 text-gray-800 leading-relaxed">
 
-  <div class="space-y-4">
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="font-medium">TaskTrackerAPI</h3>
-      <p class="text-sm text-gray-600 mt-1">
-        FastAPI service with Docker, GitLab CI/CD, Terraform, and AWS EC2 deployment.
-      </p>
-    </div>
+        <!-- Headings -->
+        <style>
+            section h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-top: 3rem;
+            }
 
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="font-medium">Kafka Log Streamer</h3>
-      <p class="text-sm text-gray-600 mt-1">
-        Event-driven log streaming with Kafka, Grafana, Splunk, and DuckDB analytics.
-      </p>
-    </div>
-  </div>
-</section>
+            section h3 {
+                font-size: 1.125rem;
+                font-weight: 600;
+                margin-top: 2rem;
+            }
 
+            section p {
+                margin-top: 0.75rem;
+            }
+
+            section ul {
+                margin-top: 0.75rem;
+                padding-left: 1.25rem;
+                list-style-type: disc;
+            }
+
+            section li {
+                margin-top: 0.25rem;
+            }
+
+            section pre {
+                background: #f5f5f5;
+                padding: 1rem;
+                border-radius: 6px;
+                overflow-x: auto;
+                font-size: 0.875rem;
+                margin-top: 0.75rem;
+            }
+
+            section code {
+                background: #f0f0f0;
+                padding: 0.15rem 0.3rem;
+                border-radius: 4px;
+                font-size: 0.875rem;
+            }
+        </style>
+
+        <p>Kubernetes doesn’t make you an engineer.
+Neither does Terraform, AWS, or Docker.</p>
+
+<p>Tools amplify thinking.
+They don’t replace it.</p>
+
+<p>I’ve seen:</p>
+<ul>
+  <li>Over-engineered systems with no monitoring</li>
+  <li>Perfect pipelines deploying broken logic</li>
+  <li>“Best practices” applied blindly and failing badly</li>
+</ul>
+
+<p>Engineering is about:</p>
+<ul>
+  <li>Trade-offs</li>
+  <li>Constraints</li>
+  <li>Failure modes</li>
+  <li>Operational reality</li>
+</ul>
+
+<p>If you can’t explain <strong>why</strong> a tool exists in your system,
+you probably don’t need it.</p>
+
+<p>Engineering starts before the tool choice.</p>
+
+
+    </section>
+
+</article>
       </div>
     </main>
 
