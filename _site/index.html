@@ -27,26 +27,26 @@
     <!-- Brand -->
     <div class="px-3 mb-8">
       <h1 class="text-3xl font-semibold"><a href="/">Sreenu M Raj</a></h1>
-      <p class="text-lg text-gray-500">DevOps Engineer</p>
+      <p class="text-lg text-gray-500">Software Engineer</p>
     </div>
 
     <!-- Nav -->
-    <nav class="space-y-1 text-lg">
+    <!-- <nav class="space-y-1 text-lg">
       <a href="/projects" class="flex items-center px-3 py-2 rounded-lg
         
           text-gray-700 hover:bg-gray-100
         ">
         Projects
-      </a>
+      </a> -->
 
-      <a href="/blog" class="flex items-center px-3 py-2 rounded-lg
+    <a href="/blog" class="flex items-center px-3 py-2 rounded-lg text-lg
         
           text-gray-700 hover:bg-gray-100
         ">
-        Blog
-      </a>
+      Blog
+    </a>
 
-      <!-- <a href="/about" class="flex items-center px-3 py-2 rounded-lg
+    <!-- <a href="/about" class="flex items-center px-3 py-2 rounded-lg
         
           text-gray-700 hover:bg-gray-100
         ">
@@ -75,38 +75,63 @@
 
       <div class="max-w-6xl mx-auto px-6 md:px-10 py-8">
         <section class="max-w-3xl">
-  <h1 class="text-5xl font-bold leading-tight">
+  <!-- <h1 class="text-5xl font-bold leading-tight">
     Hello World
-  </h1>
-
+  </h1> -->
+<div class="flex flex-col ">
   <p class="mt-6 text-lg text-gray-600">
     I design, automate, and operate cloud-native systems.
     Focused on CI/CD, AWS, Kubernetes, and production-grade automation.
   </p>
 
-</section>
 
-<!-- Projects preview -->
-<section class="mt-20 max-w-4xl">
-  <h2 class="text-xl font-semibold mb-6">
-     Projects
-  </h2>
+<div class="text-lg">
+  Projects
+</div>
 
-  <div class="space-y-4">
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="font-medium">TaskTrackerAPI</h3>
-      <p class="text-sm text-gray-600 mt-1">
-        FastAPI service with Docker, GitLab CI/CD, Terraform, and AWS EC2 deployment.
-      </p>
-    </div>
+  <div class="text-lg">
 
-    <div class="border border-gray-200 rounded-lg p-5">
-      <h3 class="font-medium">Kafka Log Streamer</h3>
-      <p class="text-sm text-gray-600 mt-1">
-        Event-driven log streaming with Kafka, Grafana, Splunk, and DuckDB analytics.
-      </p>
-    </div>
-  </div>
+    <a href="/projects/tasktracker" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
+        <div class="flex flex-col">
+            Built and deployed a production-style FastAPI application on AWS using Docker, Terraform, and GitLab CI/CD, with automated testing, security scans, and repeatable infrastructure provisioning.
+            <div class="flex justify-around">
+                
+                <li>FastAPI</li>
+                
+                <li>Docker</li>
+                
+                <li>Terraform</li>
+                
+                <li>GitLab CI/CD</li>
+                
+                <li>AWS</li>
+                
+            </div>
+        </div>
+    </a>
+</div>
+
+  <div class="text-lg">
+
+    <a href="/projects/camp" class="flex items-center px-3 py-2 rounded-lg
+        
+          text-gray-700 hover:bg-gray-100
+        ">
+        <div class="flex flex-col">
+            A frontend-only concept React Native mobile application designed for campers to explore events, discover locations, and access basic survival information.
+            <div class="flex justify-around">
+                
+                <li>ReactNative</li>
+                
+            </div>
+        </div>
+    </a>
+</div>
+
+</div>
 </section>
 
       </div>

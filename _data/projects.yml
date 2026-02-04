@@ -1,0 +1,17 @@
+- id: tasktracker
+  name: FastAPI
+  description: Built and deployed a production-style FastAPI application on AWS using Docker, Terraform, and GitLab CI/CD, with automated testing, security scans, and repeatable infrastructure provisioning. 
+
+  link: /projects/tasktracker
+  stack:
+    - FastAPI
+    - Docker
+    - Terraform
+    - GitLab CI/CD
+    - AWS
+- id: camp
+  name: camp
+  description: A frontend-only concept React Native mobile application designed for campers to explore events, discover locations, and access basic survival information.
+  link: /projects/camp
+  stack:
+    - ReactNative

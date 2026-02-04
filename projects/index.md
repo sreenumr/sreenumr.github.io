@@ -18,5 +18,12 @@ title: Projects
 
       </div>
   </section>
+  <section class="space-y-4">
+      <div>
+        <a href="/projects/camp" class="text-blue-600 hover:underline">
+          Camp
+        </a>
 
+      </div>
+  </section>
 </div>

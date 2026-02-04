@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Docker Container Name Conflict That Broke Redeployments</title>
+  <title>Event-Driven Systems: What Kafka Actually Solves</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -69,7 +69,7 @@
           ☰
         </button>
         <span class="text-sm font-medium">
-          The Docker Container Name Conflict That Broke Redeployments
+          Event-Driven Systems: What Kafka Actually Solves
         </span>
       </header>
 
@@ -79,11 +79,11 @@
     <!-- Header -->
     <header class="mb-12">
         <h1 class="text-3xl font-semibold leading-tight">
-            The Docker Container Name Conflict That Broke Redeployments
+            Event-Driven Systems: What Kafka Actually Solves
         </h1>
 
         <p class="mt-3 text-sm text-gray-500">
-            19 Jan 2026
+            31 Jan 2026
         </p>
     </header>
 
@@ -135,33 +135,34 @@
             }
         </style>
 
-        <h2 id="context">Context</h2>
+        <p>Kafka is often introduced as a performance tool.
+That’s misleading.</p>
 
-<p>While building a FastAPI service with GitLab CI/CD, I ran into several issues
-that weren’t obvious from documentation.</p>
+<p>The real value of Kafka is <strong>decoupling</strong>.</p>
 
-<p>This post captures the key failures and fixes.</p>
-
-<hr />
-
-<h2 id="issue-1-app-not-reachable-after-deployment">Issue 1: App not reachable after deployment</h2>
-
-<p><strong>Symptom</strong></p>
+<p>In production systems, direct service-to-service communication:</p>
 <ul>
-  <li>Container started successfully</li>
-  <li><code class="language-plaintext highlighter-rouge">curl</code> returned empty response</li>
+  <li>Increases coordination costs</li>
+  <li>Creates cascading failures</li>
+  <li>Makes deployments risky</li>
 </ul>
 
-<p><strong>Cause</strong></p>
+<p>Using Kafka shifted the system from:
+“Who is calling me?”
+to
+“What events happened?”</p>
+
+<p>That change:</p>
 <ul>
-  <li>App was bound to <code class="language-plaintext highlighter-rouge">127.0.0.1</code> inside the container</li>
+  <li>Reduced tight coupling</li>
+  <li>Improved observability</li>
+  <li>Made failures easier to reason about</li>
 </ul>
 
-<h2 id="fix">Fix</h2>
+<p>Kafka didn’t remove complexity.
+It <strong>moved it to a place where it could be managed</strong>.</p>
 
-<p>```bash
-gunicorn main:app -k uvicorn.workers.UvicornWorker –bind 0.0.0.0:8000</p>
-
+<p>That’s the trade-off.</p>
 
 
     </section>

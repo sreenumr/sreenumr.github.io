@@ -23,7 +23,6 @@ Response times spiked.
 - Added targeted indexes
 - Reduced query count per request
 - Batch queries
-- Tuned connection pooling limits
 
 **Result**
 
