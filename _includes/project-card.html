@@ -1,13 +1,4 @@
-<div class="text-lg">
-
-    <a href="{{/project.repo}}" target="_blank">
-        <div class="">
-            {{ project.description }}
-            <div class="flex justify-around">
-                {% for tech in project.stack %}
-                <li>{{ tech }}</li>
-                {% endfor %}
-            </div>
-        </div>
-    </a>
-</div>
+<a href="/{{ project.repo }}" target="_blank">
+  <p>{{ project.description }}</p>
+  <small>{{ project.stack | join: " · " }}</small>
+</a>
