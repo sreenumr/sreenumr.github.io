@@ -1,4 +1,6 @@
-<a href="/{{ project.repo }}" target="_blank">
-  <p>{{ project.description }}</p>
-  <small>{{ project.stack | join: " · " }}</small>
-</a>
+<p>
+  <a href="/{{ project.repo }}" target="_blank">
+    <span>{{ project.description }}</span>
+    <small>{{ project.stack | join: " · " }}</small>
+  </a>
+</p>

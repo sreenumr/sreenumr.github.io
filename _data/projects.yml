@@ -27,7 +27,7 @@
     - C#
 - id: flutter_barcode_converter
   name: Barcode converter
-  description: Developed a Flutter mobile application that converts files into barcodes and back, implementing binary data encoding, string serialization, and barcode generation to enable file reconstruction.
+  description: Flutter mobile application that converts files into barcodes and back, implementing binary data encoding, string serialization, and barcode generation to enable file reconstruction.
   link: /projects/barcode
   repo : https://github.com/sreenumr/barcode_flutter
   stack:
