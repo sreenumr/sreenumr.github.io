@@ -17,3 +17,18 @@
   repo : https://github.com/sreenumr/camp
   stack:
     - ReactNative
+- id: unity_game
+  name: Android Game
+  description: 2d Android mobile game developed using unity engine (c#)
+  link: /projects/unity_game
+  repo : https://github.com/sreenumr/unity_cube
+  stack:
+    - Unity
+    - C#
+- id: flutter_barcode_converter
+  name: Barcode converter
+  description: Developed a Flutter mobile application that converts files into barcodes and back, implementing binary data encoding, string serialization, and barcode generation to enable file reconstruction.
+  link: /projects/barcode
+  repo : https://github.com/sreenumr/barcode_flutter
+  stack:
+    - Flutter
