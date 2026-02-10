@@ -1,6 +1,6 @@
 ---
 title: "The Database Was the Bottleneck, Not the API"
-date: 2026-02-19
+date: 2026-02-01
 categories: [Performance, Databases]
 ---
 

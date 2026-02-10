@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=" en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Database Was the Bottleneck, Not the API | Sreenu Mappompilly Raj</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="The Database Was the Bottleneck, Not the API" />
+<meta name="author" content="Sreenu Mappompilly Raj" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Problem" />
+<meta property="og:description" content="Problem" />
+<link rel="canonical" href="http://localhost:4000/performance/databases/2026/02/01/database-was-the-bottleneck.html" />
+<meta property="og:url" content="http://localhost:4000/performance/databases/2026/02/01/database-was-the-bottleneck.html" />
+<meta property="og:site_name" content="Sreenu Mappompilly Raj" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-01T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Database Was the Bottleneck, Not the API" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Sreenu Mappompilly Raj"},"dateModified":"2026-02-01T00:00:00+00:00","datePublished":"2026-02-01T00:00:00+00:00","description":"Problem","headline":"The Database Was the Bottleneck, Not the API","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/performance/databases/2026/02/01/database-was-the-bottleneck.html"},"url":"http://localhost:4000/performance/databases/2026/02/01/database-was-the-bottleneck.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=2fe191e3c9cbe6d104afa04afc2e6bba8c10505a">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="http://localhost:4000">Sreenu Mappompilly Raj</a></h1>
+
+      
+
+      <p>Software Engineer</p>
+      <a href="http://localhost:4000/blog">
+        <p>Blog</p>
+      </a>
+
+      
+      <p class="view"><a href="https://github.com/sreenumr/sreenumr.github.io">View the Project on GitHub <small>sreenumr/sreenumr.github.io</small></a></p>
+      
+
+      
+
+      
+    </header>
+    <section>
+
+      <small>1 February 2026</small>
+<h1>The Database Was the Bottleneck, Not the API</h1>
+
+<p class="view">by Sreenu Mappompilly Raj</p>
+
+<p><strong>Problem</strong></p>
+
+<p>API performance degraded under load.
+Scaling the service didn’t help.</p>
+
+<p>Requests piled up.
+Response times spiked.</p>
+
+<p><strong>Diagnosis</strong></p>
+
+<ul>
+  <li>Missing indexes on high-frequency queries</li>
+  <li>N+1 query patterns</li>
+  <li>Connection pool exhaustion</li>
+</ul>
+
+<p><strong>Solution</strong></p>
+
+<ul>
+  <li>Added targeted indexes</li>
+  <li>Reduced query count per request</li>
+  <li>Batch queries</li>
+</ul>
+
+<p><strong>Result</strong></p>
+
+<p>Lower response times without scaling infrastructure.</p>
+
+<p><strong>Lesson</strong></p>
+
+<p>Scaling compute won’t fix inefficient queries.</p>
+
+
+
+  <small>tags: <em></em></small>
+
+
+
+    </section>
+    <footer>
+      
+      <p>This project is maintained by <a href="https://github.com/sreenumr">sreenumr</a></p>
+      
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+      </p>
+    </footer>
+  </div>
+  <script src="/assets/js/scale.fix.js"></script>
+</body>
+
+</html>

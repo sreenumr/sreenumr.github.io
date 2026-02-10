@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang=" en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Why I Switched from Python Kivy to Flutter — and Finished the App | Sreenu Mappompilly Raj</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Why I Switched from Python Kivy to Flutter — and Finished the App" />
+<meta name="author" content="Sreenu Mappompilly Raj" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This project started with a simple goal: convert files into QR codes and reconstruct them back reliably on a mobile device." />
+<meta property="og:description" content="This project started with a simple goal: convert files into QR codes and reconstruct them back reliably on a mobile device." />
+<link rel="canonical" href="http://localhost:4000/mobile/engineering/lessons/2026/02/10/python-kivy-to-flutter.html" />
+<meta property="og:url" content="http://localhost:4000/mobile/engineering/lessons/2026/02/10/python-kivy-to-flutter.html" />
+<meta property="og:site_name" content="Sreenu Mappompilly Raj" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-02-10T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Why I Switched from Python Kivy to Flutter — and Finished the App" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Sreenu Mappompilly Raj"},"dateModified":"2026-02-10T00:00:00+00:00","datePublished":"2026-02-10T00:00:00+00:00","description":"This project started with a simple goal: convert files into QR codes and reconstruct them back reliably on a mobile device.","headline":"Why I Switched from Python Kivy to Flutter — and Finished the App","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/mobile/engineering/lessons/2026/02/10/python-kivy-to-flutter.html"},"url":"http://localhost:4000/mobile/engineering/lessons/2026/02/10/python-kivy-to-flutter.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet" href="/assets/css/style.css?v=2fe191e3c9cbe6d104afa04afc2e6bba8c10505a">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="http://localhost:4000">Sreenu Mappompilly Raj</a></h1>
+
+      
+
+      <p>Software Engineer</p>
+      <a href="http://localhost:4000/blog">
+        <p>Blog</p>
+      </a>
+
+      
+      <p class="view"><a href="https://github.com/sreenumr/sreenumr.github.io">View the Project on GitHub <small>sreenumr/sreenumr.github.io</small></a></p>
+      
+
+      
+
+      
+    </header>
+    <section>
+
+      <small>10 February 2026</small>
+<h1>Why I Switched from Python Kivy to Flutter — and Finished the App</h1>
+
+<p class="view">by Sreenu Mappompilly Raj</p>
+
+<p>This project started with a simple goal:<br />
+convert files into QR codes and reconstruct them back reliably on a mobile device.</p>
+
+<p>On paper, it sounded straightforward.</p>
+
+<p>In practice, the <strong>technology choice mattered more than the logic</strong>.</p>
+
+<hr />
+
+<h2 id="initial-approach-python--kivy">Initial Approach: Python + Kivy</h2>
+
+<p>I initially chose <strong>Python with Kivy</strong>.</p>
+
+<p>The reasoning was familiar:</p>
+<ul>
+  <li>I already knew Python well</li>
+  <li>The core logic (binary conversion, encoding/decoding) was easier to prototype</li>
+  <li>One language across backend and mobile felt efficient</li>
+</ul>
+
+<p>Reality disagreed.</p>
+
+<h3 id="the-actual-problems">The Actual Problems</h3>
+
+<ul>
+  <li>Android builds relied on <strong>WSL and cross-compilation</strong></li>
+  <li>Build times ran into <strong>hours</strong></li>
+  <li>Tooling failures were opaque and poorly documented</li>
+  <li>Most of my time went into <em>fighting the build system</em>, not building features</li>
+</ul>
+
+<p>After <strong>weeks spent just trying to get a stable build</strong>, progress was effectively zero.</p>
+
+<p>The app logic wasn’t the bottleneck.<br />
+The ecosystem was.</p>
+
+<hr />
+
+<h2 id="the-switch-flutter">The Switch: Flutter</h2>
+
+<p>At that point, I made a hard decision: <strong>drop Kivy and switch to Flutter</strong>.</p>
+
+<p>This wasn’t about language preference.<br />
+It was about <strong>delivery</strong>.</p>
+
+<h3 id="what-changed-immediately">What Changed Immediately</h3>
+
+<ul>
+  <li>Predictable build tooling</li>
+  <li>Clear Android/iOS support</li>
+  <li>Fast iteration cycles</li>
+  <li>Excellent QR and binary-handling libraries</li>
+  <li>Strong documentation and community examples</li>
+</ul>
+
+<p>Within <strong>one week</strong>, the app was:</p>
+<ul>
+  <li>Functional</li>
+  <li>Buildable</li>
+  <li>Testable on real devices</li>
+</ul>
+
+<hr />
+
+<h2 id="final-outcome">Final Outcome</h2>
+
+<ul>
+  <li>Built a <strong>Flutter-based mobile application</strong> that converts files into QR codes and reconstructs them back</li>
+  <li>Implemented <strong>binary data conversion → string encoding → QR generation</strong></li>
+  <li>Achieved <strong>successfull file conversion</strong></li>
+  <li>Ensured accurate file recovery with validation and error handling</li>
+  <li>Delivered a usable product instead of a half-working prototype</li>
+</ul>
+
+<hr />
+
+<h2 id="the-real-lesson">The Real Lesson</h2>
+
+<p>This project reinforced a hard truth:</p>
+
+<p>Python was great for experimentation.<br />
+Flutter was better for execution.</p>
+
+<p>Switching tools felt like a setback at first.<br />
+In reality, it was the reason the project shipped at all.</p>
+
+<hr />
+
+<h2 id="what-id-do-again">What I’d Do Again</h2>
+
+<ul>
+  <li>Prototype fast</li>
+  <li>Kill bad tooling early</li>
+  <li>Optimise for <strong>delivery, not familiarity</strong></li>
+  <li>Treat build systems as first-class requirements</li>
+</ul>
+
+<p>Sometimes the smartest optimisation isn’t in code —<br />
+it’s in <strong>walking away from the wrong stack</strong>.</p>
+
+
+
+  <small>tags: <em></em></small>
+
+
+
+    </section>
+    <footer>
+      
+      <p>This project is maintained by <a href="https://github.com/sreenumr">sreenumr</a></p>
+      
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+      </p>
+    </footer>
+  </div>
+  <script src="/assets/js/scale.fix.js"></script>
+</body>
+
+</html>
