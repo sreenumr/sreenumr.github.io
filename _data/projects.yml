@@ -32,3 +32,17 @@
   repo : https://github.com/sreenumr/barcode_flutter
   stack:
     - Flutter
+
+- id: ollama_incident_report_builder
+  name: Ollama incident report builder
+  description: A local-first CLI tool that reconstructs incident timelines and generates structured postmortem documentation using DuckDB, Git repository context, and a local LLM (via Ollama).
+  link: /projects/incident
+  repo : https://github.com/sreenumr/ollama-incident-report-builder
+  stack:
+   - Python
+   - DuckDB (event storage and analytics)
+   - Typer (CLI interface)
+   - Pydantic (structured validation)
+   - Ollama (local LLM runtime)
+   - Redis (report caching)
+   - Git CLI (repository context extraction)
