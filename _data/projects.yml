@@ -46,3 +46,17 @@
    - Ollama (local LLM runtime)
    - Redis (report caching)
    - Git CLI (repository context extraction)
+
+- id: musicmentor
+  name: MusicMentor
+  description: An AI-powered music learning app — key detection, scales, chord progressions, and transposition in a deterministic C# engine, paired with a Python FastAPI microservice for natural-language music theory Q&A via a local LLM.
+  link: /projects/musicmentor
+  repo : https://github.com/sreenumr/MusicMentor
+  stack:
+   - ASP.NET Core
+   - Blazor
+   - Entity Framework Core / SQLite
+   - Python
+   - FastAPI
+   - Ollama (local LLM runtime)
+   - Tailwind CSS
