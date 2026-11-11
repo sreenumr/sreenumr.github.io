@@ -1,6 +1,10 @@
-<p>
-  <a href="{{ project.repo }}" target="_blank">
-    <span>{{ project.description }}</span>
-    <small>{{ project.stack | join: " · " }}</small>
-  </a>
-</p>
+<article class="card">
+  <h3 class="card-title"><a href="{{ include.project.link | relative_url }}">{{ include.project.name }}</a></h3>
+  <p class="card-desc">{{ include.project.description }}</p>
+  <ul class="tags">
+    {% for item in include.project.stack %}<li>{{ item | split: " (" | first }}</li>{% endfor %}
+  </ul>
+  {% if include.project.repo %}
+  <a class="card-repo" href="{{ include.project.repo }}" target="_blank" rel="noopener">Source code &nearr;</a>
+  {% endif %}
+</article>

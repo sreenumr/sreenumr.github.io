@@ -60,3 +60,16 @@
    - FastAPI
    - Ollama (local LLM runtime)
    - Tailwind CSS
+
+- id: tonic
+  name: Tonic
+  description: Real-time key, scale, and chord detection from live microphone audio or an uploaded track — one Go codebase shipped as a web app, an installable PWA, and a fully offline native Android app.
+  link: /projects/tonic
+  repo : https://github.com/sreenumr/Tonic
+  stack:
+   - Go (backend + DSP / music-theory engine)
+   - HTML / CSS / JavaScript (Web Audio API, AudioWorklet)
+   - WebSockets
+   - PWA (service worker, manifest)
+   - Kotlin (Android WebView shell, AudioRecord)
+   - gomobile

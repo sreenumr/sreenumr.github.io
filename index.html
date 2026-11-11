@@ -1,0 +1,39 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <h1 class="hero-title">Product builder. Full-stack engineer. Building with AI.</h1>
+  <p class="hero-sub">From idea to production — backend, frontend, cloud, and the AI that ties them together.</p>
+  <div class="hero-links">
+    <a class="btn btn-primary" href="{{ site.cv | relative_url }}" target="_blank" rel="noopener">Download CV</a>
+    <a class="btn" href="{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+  <div class="card-grid">
+    {% assign projects = site.data.projects | reverse %}
+    {% for project in projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2 class="section-title">Recent writing</h2>
+    <a class="more" href="{{ '/blog' | relative_url }}">All posts &rarr;</a>
+  </div>
+  <ul class="post-list">
+    {% for post in site.posts limit:3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

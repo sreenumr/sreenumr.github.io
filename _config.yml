@@ -1,6 +1,25 @@
 title : Sreenu Mappompilly Raj
 description : Software Engineer
-theme : jekyll-theme-minimal
 author : Sreenu Mappompilly Raj
 url: https://sreenumr.github.io
 blog : "/blog"
+
+cv: /assets/Sreenu.pdf
+social:
+  github: https://github.com/sreenumr
+  linkedin: https://www.linkedin.com/in/sreenumraj
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+---
+
+<section class="section page">
+  <h1 class="page-title">Blog</h1>
+  <p class="lead">Notes from building things: what broke, what worked, and why.</p>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
